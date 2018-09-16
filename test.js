@@ -3,6 +3,7 @@ Object.freeze(assert);
 const getLoveTrianglesCount = require('./src/index');
 
 describe('Love triangles', () => {
+  
   it('1', () => {
     const count = getLoveTrianglesCount([2, 3, 1]);
     assert.equal(count, 1);
@@ -12,11 +13,13 @@ describe('Love triangles', () => {
     const count = getLoveTrianglesCount([2, 3, 1, 5, 6, 4]);
     assert.equal(count, 2);
   });
+  
 
   it('3', () => {
     const count = getLoveTrianglesCount([2, 3, 1, 5, 6, 4, 2, 3, 1, 5, 6, 4, 2, 3, 1, 5, 6, 4]);
     assert.equal(count, 2);
   });
+
 
   it('4', () => {
     const count = getLoveTrianglesCount([3, 3, 3, 3, 3, 3, 3, 3]);
